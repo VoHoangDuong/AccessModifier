@@ -1,13 +1,19 @@
 public class Circle {
-    double radius;
+  public double radius;
+  public String color;
 
-    public Circle(double radius) {
+    public Circle(double radius, String color) {
         this.radius = radius;
+        this.color = color;
     }
-    public double radius(){
-    return this.radius*this.radius*Math.PI;
+
+    public double getRadius() {
+        return radius;
     }
-    public double getCircumference(){
-        return this.radius*2*Math.PI;
+    public String getColor(){
+        return color;
+    }
+    public double getArea(){
+        return this.radius*this.radius*3.14;
     }
 }
